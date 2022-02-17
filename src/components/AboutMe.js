@@ -1,0 +1,42 @@
+import React from 'react'
+
+
+function AboutMe() {
+
+  const [bioState, setBioState] = React.useState('3')
+
+  function changeBioState (e) {
+    setBioState(e.target.value)
+  }
+  
+  return (
+    <section id='bio'>
+      <div className="flex-center-col">
+        <h3>How much would you like to know about me?</h3>
+        <div className='about-me-button-wrapper'>
+          <button className='bio-button' value={1} onClick={changeBioState}>Nothing</button>
+          <button className='bio-button' value={2} onClick={changeBioState}>A little bit</button>
+          <button className='bio-button' value={3} onClick={changeBioState}>The basics</button>
+          <button className='bio-button' value={4} onClick={changeBioState}>Quite a bit</button>
+          <button className='bio-button' value={5} onClick={changeBioState}>Life story, please</button>
+        </div>
+        <div className='bio-wrapper'>
+          {/* 1 */}
+          {bioState === '1' && <p>I&apos;m doing my best to make beautiful code.</p>}
+          {/* 2 */}
+          {bioState === '2' && <p>I&apos;m a recent graduate of the software engineering immersive course at General Assembly. I&apos;m looking to take the first steps in my tech career.</p> }
+          {/* 3 */}
+          {bioState === '3' && <p>I&apos;m a recent graduate of the software engineering immersive course at General Assembly. I am looking to take the next step in my career as a software engineer, working within a collaborative team that will allow me to meaningfully utilise and develop my skills further.</p> } 
+          {/* 4 */}
+          {bioState === '4' && <p>A love of problem solving led me to self-teaching basic code. As this grew, it spurred me into studying software engineering full time with General Assembly. I&apos;m a passionate advocate for life-long learning, adapting to new challenges and being able to work empathetically across cultures and experiences. I am a skilled communicator and have experience leading complex projects with multiple stakeholders. I am looking to take the next step in my career as a software engineer, working within a collaborative team that will allow me to meaningfully utilise and develop my skills further.</p> }
+          {/* 5 */}
+          {bioState === '5' && <p>
+            I&apos;ve worked in international relations, helping to create and nurture programmes that fostered mutual understanding as well as elite sport. A love of problem solving led me to self-teaching basic code. As this grew, it spurred me into studying software engineering full time with General Assembly. I&apos;m a passionate advocate for life-long learning, adapting to new challenges and being able to work empathetically across cultures and experiences. I am a skilled communicator and have experience leading complex projects with multiple stakeholders. I am looking to take the next step in my career as a software engineer, working within a collaborative team that will allow me to meaningfully utilise and develop my skills further.
+          </p> }
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default AboutMe
