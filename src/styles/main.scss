@@ -97,8 +97,18 @@ nav {
   margin: 10px;
 }
 
+.interst-title {
+  display: flex;
+  justify-content: center;
+  img {
+    max-width: 15vh;
+    max-height: 15vh;
+    margin-left: 2em;
+  }
+}
+
 .skills-wrapper {
-  height: 90vh;
+  height: auto;
 }
 
 .bio-wrapper {
@@ -111,13 +121,13 @@ nav {
   }
 }
 
-.left-hand-project {
-  align-self: flex-start;
-}
+// .left-hand-project {
+//   align-self: flex-start;
+// }
 
-.right-hand-project {
-  align-self: flex-end;
-}
+// .right-hand-project {
+//   align-self: flex-end;
+// }
 
 .container {
   height: 100%;
@@ -163,11 +173,12 @@ nav {
 
 .slideShow {
   margin: 3em;
-  min-height: 75vh;
+  height: auto;
 }
 
 .slider-image{
-  height: 70vh;
+  max-height: 70vh;
+  max-width: 100%;
 }
 
 .right-arrow{
@@ -192,10 +203,12 @@ nav {
 }
 
 .slide-active {
-  height: 100%;
+  // height: 100%;
   opacity: 1;
   transition-duration: 1s;
   transform: scale(0.95);
+  border: 1em solid $fourth-color;
+  max-width: 80vw;
 
 }
 
@@ -300,10 +313,6 @@ input[type="radio"]:checked::before {
   transform: scale(1);
 }
 
-.project-border {
-  border: 10px solid $fourth-color;
-}
-
 .header-icon {
   font-size: 4em;
   margin: 0 1em;
@@ -315,4 +324,69 @@ input[type="radio"]:checked::before {
 
 .interests-wrapper {
   background-color: $second-color;
+}
+
+.main-interest-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.interest-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  img {
+    max-width: 10vh;
+    max-height: 10vh;
+  }
+}
+
+@media screen and (max-width: 1470px) {
+  .title, .subtitles{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .mike-image{
+    display: none;
+  }
+  .header-left{
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 820px) {
+  .about-me-title {
+    text-align: center;
+  }
+  .about-me-button-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    button {
+      border: 2px solid $second-color;
+      margin: 1px;
+    }
+  }
+  .bio-wrapper {
+    width: 90%;
+  }
+  .slide-active {
+    border: 5px solid $fourth-color;
+  }
+  .project-info {
+    width: 80%;
+  }
+  .project-text {
+    text-align: center;
+  }
+  .project-container {
+    width: 80%;
+  }
+
 }

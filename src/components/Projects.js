@@ -26,11 +26,11 @@ function Projects () {
       <h3>My Projects</h3>
       {sliderData.map((slide, index) => {
         return (
-          <>
-            <div className={index === currentSlide ? 'slide-active project-border' : 'slide'} key={slide.name}>
-              {index === currentSlide && <a href={slide.url} target='_blank' rel="noreferrer"><img className='slider-image' src={slide.imageUrl}></img></a>}
-            </div>
-          </>
+          
+          <div className={index === currentSlide ? 'slide-active' : 'slide'} key={slide.name}>
+            {index === currentSlide && <a href={slide.url} target='_blank' rel="noreferrer"><img className='slider-image' src={slide.imageUrl}></img></a>}
+          </div>
+
         )
       })}
       <div className='black-border slide-changer'>
@@ -43,7 +43,7 @@ function Projects () {
       </div>
       <div className='flex-center-col project-info'>
         <a href={sliderData[currentSlide].url} target='_blank' rel="noreferrer"><h5>{sliderData[currentSlide].name}</h5></a>
-        <p>
+        <p className='project-text'>
           {sliderData[currentSlide].info}
         </p>
       </div>
