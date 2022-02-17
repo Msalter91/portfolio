@@ -12,7 +12,7 @@ function AboutMe() {
   return (
     <section id='bio'>
       <div className="flex-center-col">
-        <h3>How much would you like to know about me?</h3>
+        <h3 className='about-me-title'>How much would you like to know about me?</h3>
         <div className='about-me-button-wrapper'>
           <button className='bio-button' value={1} onClick={changeBioState}>Nothing</button>
           <button className='bio-button' value={2} onClick={changeBioState}>A little bit</button>
