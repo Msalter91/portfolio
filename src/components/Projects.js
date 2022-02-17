@@ -43,6 +43,7 @@ function Projects () {
       </div>
       <div className='flex-center-col project-info'>
         <a href={sliderData[currentSlide].url} target='_blank' rel="noreferrer"><h5>{sliderData[currentSlide].name}</h5></a>
+        <p className='readme'><a href={sliderData[currentSlide].readMeUrl}>ReadMe</a></p>
         <p className='project-text'>
           {sliderData[currentSlide].info}
         </p>
