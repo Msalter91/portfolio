@@ -19,7 +19,7 @@ function Interests () {
             <img src='https://imgur.com/yIc7aVh.png'></img>
           </div>
           <p>
-          I&apos;ve lived in Japan a couple of times and can speak Japanese to a high level. I helped organisations such as the RFU and British Olympic Association and British Paralympic Assosication prepare for Tokyo 2020 and the Rugby World Cup 2019 and ran the Japanese Sport Stories Podcast with SOAS University and Paralympian Noel Thatcher. I love Japanese literature, especially Sayaka Murata and Yu Miri, and Japanese movies/cheesy dramas. 
+          I&apos;ve lived in Japan a couple of times and can speak Japanese to a high level. I helped organisations such as the RFU, British Olympic Association and British Paralympic Assosication prepare for Tokyo 2020 and the Rugby World Cup 2019 and ran the Japanese Sport Stories Podcast with SOAS University and Paralympian Noel Thatcher. I love Japanese literature, especially Sayaka Murata and Yu Miri, and Japanese movies/cheesy dramas. 
           </p>
         </div>
         <div className="right-hand-project project-container">
