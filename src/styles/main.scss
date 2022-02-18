@@ -122,6 +122,7 @@ footer {
   padding: 2em;
   height: auto;
   width: 50%;
+  line-height: 1.8em;
   text-align: center;
   p {
     font-size: 2em;
@@ -335,6 +336,7 @@ input[type="radio"]:checked::before {
 
 .interests-wrapper {
   background-color: $second-color;
+  padding-bottom: 2em;
 }
 
 .main-interest-section {
@@ -358,6 +360,10 @@ input[type="radio"]:checked::before {
 .footer-icon-wrapper {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  div {
+    margin: 0.2em 0;
+  }
 }
 
 @media screen and (max-width: 1470px) {
@@ -377,6 +383,11 @@ input[type="radio"]:checked::before {
 }
 
 @media screen and (max-width: 820px) {
+  .header-left {
+    h1 {
+      font-size: 4em;
+    }
+  }
   .about-me-title {
     text-align: center;
   }
@@ -404,5 +415,29 @@ input[type="radio"]:checked::before {
   .project-container {
     width: 80%;
   }
-
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 1em;
+  }
+  a{
+    margin: 0 0.25em;
+  }
+  .footer-info {
+    p {
+      display: none;
+    }
+  }
+  .book-section {
+    width: 80%
+  }
+  .last-book {
+    display: none;
+  }
+  .reading-image {
+    max-width: 100%;
+    height: auto;
+  }
 }

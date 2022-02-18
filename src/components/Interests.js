@@ -34,16 +34,16 @@ function Interests () {
       </div>
       <div className="full-width flex-center-col">
         <div>
-          <h3>What I&apos;m Reading Now</h3> 
+          <h3>What I&apos;m Reading</h3> 
         </div>
         <div className="black-border flex-sa">
-          <div className="half-width">
+          <div className="half-width book-section">
             <div>
               <p>Now</p> 
               <img className="reading-image" src="https://www.europaeditions.com/spool/cover_9781609455873__id1719_w480_t1573725973__1x.jpg"></img>
             </div>
           </div>
-          <div className="half-width">
+          <div className="half-width last-book">
             <div>
               <p>Last time</p>
               <img className="reading-image" src="https://images-na.ssl-images-amazon.com/images/I/61nYBxERN3L.jpg"></img>

@@ -4,7 +4,7 @@ function Contact () {
 
   return (
     <footer>
-      <div>
+      <div className='footer-info'>
         <h5>Contact</h5>
         <p>Feel free to get in touch through any of the ways listed here!</p>
       </div>
