@@ -40,7 +40,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 7vh;
+  height: 5vh;
   background-color: $third-color;
   opacity: 0.6;
   div{
@@ -128,14 +128,6 @@ footer {
     font-size: 2em;
   }
 }
-
-// .left-hand-project {
-//   align-self: flex-start;
-// }
-
-// .right-hand-project {
-//   align-self: flex-end;
-// }
 
 .container {
   height: 100%;
@@ -366,6 +358,10 @@ input[type="radio"]:checked::before {
   }
 }
 
+.mobile-nav {
+  display: none;
+}
+
 @media screen and (max-width: 1470px) {
   .title, .subtitles{
     text-align: center;
@@ -402,6 +398,9 @@ input[type="radio"]:checked::before {
   }
   .bio-wrapper {
     width: 90%;
+    p {
+      font-size: 1rem;
+    }
   }
   .slide-active {
     border: 5px solid $fourth-color;
@@ -440,4 +439,30 @@ input[type="radio"]:checked::before {
     max-width: 100%;
     height: auto;
   }
+  .full-nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+    margin-right: 2rem;
+    cursor: pointer;
+  }
+  .mobile-nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5%;
+    background-color: grey;
+    width: 10rem;
+    position: fixed;
+    top: 5vh;
+    right: 0;
+    transition: ease-in-out 1s;
+    opacity: 70%;
+    a{
+      color: $main-color;
+    }
+  }
+
+
 }
