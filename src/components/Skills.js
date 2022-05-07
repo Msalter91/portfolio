@@ -7,8 +7,12 @@ function Skills () {
   return (
     <IconContext.Provider value={{ color: 'black', size: '9em' }}>
       <div className='skills-wrapper flex-center-col black-background' id='skills'>
-        <h3 className='gold'>Technologies I Work With</h3>
+        <h3>Fontend Technologies</h3>
         <div className='icon-container flex-center'>
+          <div className='icon-box hexagon flex-center-col'>
+            <FaJs className='skill-icon' />
+            <p>JavaScript</p>
+          </div>
           <div className='icon-box hexagon flex-center-col'>
             <FaReact className='skill-icon' />
             <p>React</p>
@@ -18,10 +22,6 @@ function Skills () {
             <p>HTML</p>
           </div>
           <div className='icon-box hexagon flex-center-col'>
-            <FaJs className='skill-icon' />
-            <p>JavaScript</p>
-          </div>
-          <div className='icon-box hexagon flex-center-col'>
             <FaCss3Alt className='skill-icon' />
             <p>CSS</p>
           </div>
@@ -29,6 +29,12 @@ function Skills () {
             <FaSass className='skill-icon' />
             <p>Sass</p>
           </div>
+        </div>
+      </div>
+
+      <div className='skills-wrapper flex-center-col black-background' id='skills'>
+        <h3>Backend Technology</h3>
+        <div className='icon-container flex-center'>
           <div className='icon-box hexagon flex-center-col'>
             <FaNodeJs className='skill-icon' />
             <p>Node.js</p>
@@ -53,6 +59,11 @@ function Skills () {
             <SiMariadb className='skill-icon' />
             <p>Maria DB</p>
           </div>
+        </div>
+      </div>
+      <div className='skills-wrapper flex-center-col black-background' id='skills'>
+        <h3>Dev ops</h3>
+        <div className='icon-container flex-center'>
           <div className='icon-box hexagon flex-center-col'>
             <FaGit className='skill-icon' />
             <p>Git</p>
@@ -72,8 +83,6 @@ function Skills () {
           <div className='icon-box hexagon flex-center-col'>
             <SiNetlify className='skill-icon' />
             <p>Netlify</p>
-          </div>
-          <div>
           </div>
         </div>
       </div>
