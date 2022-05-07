@@ -40,13 +40,13 @@ function Interests () {
           <div className="half-width book-section">
             <div>
               <p>Now</p> 
-              <img className="reading-image" src="https://www.europaeditions.com/spool/cover_9781609455873__id1719_w480_t1573725973__1x.jpg"></img>
+              <img className="reading-image" src="https://pictures.abebooks.com/isbn/9781908968494-uk.jpg"></img>
             </div>
           </div>
           <div className="half-width last-book">
             <div>
               <p>Last time</p>
-              <img className="reading-image" src="https://images-na.ssl-images-amazon.com/images/I/61nYBxERN3L.jpg"></img>
+              <img className="reading-image" src="https://www.europaeditions.com/spool/cover_9781609455873__id1719_w480_t1573725973__1x.jpg"></img>
             </div>
           </div>
         </div>
